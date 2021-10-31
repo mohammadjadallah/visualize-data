@@ -1,0 +1,45 @@
+# ملاحظة يتم كتابة الأكواد في jupyter notebook
+
+
+# سلسلة تمثيل البيانات صوريا 
+# سنستخدم مكتبات مثل matplotlib
+
+# مع تمنياتي للجميع بالتوفيق 
+# لنبدأ التعلم مع بعضنا البعض
+
+#سنجلب البيانات لذلك نحتاج أن نقرأ تلك البيانات من ملف
+# يحتوي تلك البيانات وبالتالي حتى نقرأ تلك البيانات 
+# سنستخدم مكتبة pandas
+
+import pandas as pd
+
+readFile = pd.read_csv(r'C:\Users\mhmdj\PycharmProjects\learn dataScience jupyter\nba.csv')
+
+# الآن نكون قد جلبنا الملف الذي يحتوي البيانات دعونا نعرضها
+
+readFile
+
+
+# الآن دعونا نبدأ بتمثيلها صوريا 
+
+import matplotlib.pyplot as plt
+
+#readFile.plot()
+
+# يمكننا أن نحفظ الصورة عن طريق الدالة savefig('title')
+
+# للتوضيح نوع الرسمة 
+
+# سنجلب عمود ونمثله 
+
+readFile[readFile['Team'] == 
+         'Utah Jazz']['Salary'].plot(
+                color='purple'
+)
+
+
+
+# وهذا ما يعرف ب line plot
+
+
+

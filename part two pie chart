@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as np
+import numpy as nppie
 
 # Number users of languages
 data = np.array([7.6*10**6, 8.2*10**6, 5.9*10**6, 1.8*10**6, 1.7*10**6])

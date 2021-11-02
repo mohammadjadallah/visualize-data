@@ -1,0 +1,23 @@
+# how to plot horizantal bar with matplotlib
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = {
+    'Name1':['Ahmad', 'Hamed', 'Yamin', 'Saleem', 'Hadi'],
+    'Name2': ['Lana', 'Noura', 'Sara', 'Aya', 'Yasmine'],
+    'Salary1':[5000, 200, 1000, 500, 7500],
+    'Salary2': [2000, 800, 1500, 4500, 6000],
+}
+
+# We want to represent the data visualization type barh
+
+df = pd.DataFrame(data,columns=['Name1', 'Name2', 'Salary1', 'Salary2'])
+print(df)
+
+labels = ['Lana\nAhmad', 'Noura\nHamed',
+          'Sara\nYamin', 'Aya\nSaleem', 'Yasmine\nHadi']
+plt.style.use('Solarize_Light2')
+df.plot(kind='barh').set_yticklabels(labels)
+
+plt.show()

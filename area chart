@@ -1,0 +1,18 @@
+# How to plot area chart with matplotlib
+
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = {
+    'Name1':['Ahmad', 'Hamed', 'Yamin', 'Saleem', 'Hadi'],
+    'Name2': ['Lana', 'Noura', 'Sara', 'Aya', 'Yasmine'],
+    'Age1':[55, 20, 15, 50, 40],
+    'Age2': [43, 24, 75, 33, 16],
+}
+
+df = pd.DataFrame(data)
+
+plt.style.use('bmh')
+
+df.plot(kind='area', stacked=False)
+plt.show()
